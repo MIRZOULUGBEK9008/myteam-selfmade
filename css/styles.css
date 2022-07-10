@@ -235,3 +235,65 @@ img {
   display: flex;
   align-items: center;
 }
+
+
+/* HERO  */
+.hero {
+  padding-top: 53px;
+  padding-bottom: 250px;
+  /* background-image: url(../img/home/hero-circle-double.svg);
+  background-repeat: no-repeat;
+  background-position: calc(1000px) calc(350px); */
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.hero__title {
+  min-width: 635px;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+strong {
+  color: var(--light-coral);
+}
+
+.hero__text {
+  position: relative;
+  top: -5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 445px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero__text::before {
+  position: absolute;
+  top: -82px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: var(--rapture-blue);
+}
+
+.hero__bg-double-circle {
+  position: absolute;
+  bottom: -349px;
+  right: 22px;
+}
+
+.hero__bg-circle {
+  position: absolute;
+  left: -246px;
+}
