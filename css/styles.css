@@ -242,8 +242,7 @@ img {
 }
 
 .features__badge {
-  flex-shrink: 0;
-  width: 56px;
+  min-width: 56px;
   height: 56px;
   object-fit: contain;
 }
@@ -322,7 +321,7 @@ img {
   line-height: 100px;
 }
 
-strong {
+.hero__title strong {
   color: var(--light-coral);
 }
 
@@ -399,4 +398,104 @@ strong {
   width: 50px;
   height: 4px;
   background-color: var(--light-coral);
+}
+
+
+/* SECTION-SUCCESS  */
+.section-success {
+  padding-top: 137px;
+  padding-bottom: 140px;
+}
+
+.section-success__container {
+  position: relative;
+}
+
+.section-success__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  width: 932px;
+  margin-top: 0;
+  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-success__title strong {
+  color: var(--rapture-blue);
+}
+
+.section-successes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -30px;
+  margin-bottom: -60px;
+}
+
+.section-successes__item {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  background-image: url(../img/home/“.svg);
+  background-repeat: no-repeat;
+  background-position: center calc(0px);
+}
+
+.section-successes__auth-info {
+  order: 1;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.section-successes__auth {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--rapture-blue);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section-successes__about-auth {
+  display: inline-block;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.section-successes__description {
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.section-successes__auth-img {
+  flex-shrink: 0;
+  width: 69px;
+  height: 69px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  order: 2;
+}
+
+.section-success__bg-left {
+  position: absolute;
+  left: -147px;
+  top: -140px;
+}
+
+.section-success__bg-right {
+  position: absolute;
+  right: -143px;
+  bottom: -199px;
 }
