@@ -219,6 +219,70 @@ img {
   flex-grow: 1;
 }
 
+/* FEATURES  */
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.features__badge-wrapper {
+  position: relative;
+}
+
+.features__badge {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.list-style-circle {
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  left: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--police-blue);
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 6px;
+  margin-left: 39px;
+  width: 100%;
+  max-width: 445px;
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  color: var(--light-coral);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.features__text {
+  margin: 0;
+  opacity: 0.8;
+}
+
 
 /* SITE-HEADER  */
 .site-header {
@@ -241,9 +305,6 @@ img {
 .hero {
   padding-top: 53px;
   padding-bottom: 250px;
-  /* background-image: url(../img/home/hero-circle-double.svg);
-  background-repeat: no-repeat;
-  background-position: calc(1000px) calc(350px); */
 }
 
 .hero__container {
@@ -296,4 +357,46 @@ strong {
 .hero__bg-circle {
   position: absolute;
   left: -246px;
+}
+
+
+/* SECTIO-FEATURES  */
+.section-features {
+  position: relative;
+  z-index: 10;
+  background-color: var(--sacramento-state-green);
+  padding-top: 199px;
+  padding-bottom: 140px;
+}
+
+.section-features__container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-features__circle-bg {
+  position: absolute;
+  right: -243px;
+  bottom: -137px;
+}
+
+.section-features__title {
+  position: relative;
+  width: 445px;
+  margin: 0;
+  margin-right: 30px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.section-features__title::before {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: var(--light-coral);
 }
