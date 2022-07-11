@@ -812,8 +812,8 @@ address {
   right: calc(50% - 28px);
   padding: 0;
   border: none;
-  background-color: transparent;
   border-radius: 50%;
+  background-color: transparent;
   color: var(--light-coral);
   cursor: pointer;
 }
@@ -829,4 +829,76 @@ address {
 
 .plus--active:hover svg {
   color: var(--light-coral);
+}
+
+
+/* SECTION-CLIENTS  */
+.clients {
+  padding-top: 140px;
+  padding-bottom: 103px;
+  background-color: var(--sacramento-state-green);
+}
+
+.clients__container {
+  position: relative;
+}
+
+.clients__circle {
+  position: absolute;
+  top: -140px;
+  left: -147px;
+}
+
+.clients__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+.clients__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: -79px;
+  margin-bottom: -50px;
+  padding: 0;
+  list-style: none;
+}
+
+.clients__item {
+  margin-left: 79px;
+  margin-bottom: 80px;
+}
+
+.clients__logo {
+  object-fit: contain;
+}
+
+.clients__logo--verge {
+  width: 165px;
+  height: 28px;
+}
+
+.clients__logo--jakarta {
+  width: 184px;
+  height: 23px;
+}
+
+.clients__logo--guardian {
+  width: 180px;
+  height: 28px;
+}
+
+.clients__logo--techradar {
+  width: 165px;
+  height: 28px;
+}
+
+.clients__logo--gadgets {
+  width: 98px;
+  height: 45px;
 }
